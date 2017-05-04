@@ -18,6 +18,7 @@ header{
   background-color: #f4f4f4;
   position: relative;
 }
+
 #container{
 /*  position: relative;
   max-width: 960px;
@@ -28,6 +29,8 @@ header{
   float: left;
   font-weight: 900;
   color: #463768;
+  padding: 0px 50px;
+  font-size: 50px;
 }
 
 nav {
@@ -46,6 +49,11 @@ ul li a{
   size: 14px;
   text-decoration: none;
 }
+
+nav ul li:first-child:hover{
+  cursor: pointer;
+}
+
 nav ul li:first-child{
   background: transparent;
   position: absolute;
@@ -63,18 +71,21 @@ nav ul li:first-child{
 }
 
 #hero {
-  height: auto;
   background: url("../images/isleofskyebg.jpg");
   background-size: cover;
-  background-width: 100%;
- ]
+  height: 673px;
+  background-position: right;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #welcome {
   color: #f4f4f4;
   font-size: 40px;
-  padding: 10px 10px;
+  padding: 400px 10px;
   margin-top: 0px;
+  width: 66%;
 }
 
 #resume {
@@ -396,6 +407,8 @@ h2 {
   -webkit-backface-visibility: hidden;
 }
 
+
+
 @media screen and (max-width: 850px) { 
   .content-inner h3 {
     font-size: 20px;
@@ -505,6 +518,51 @@ end resume css*/
   overflow: hidden;
 }
 
+
+/*Modal CSS*/
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: #373737;
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*End Modal CSS*/
+
+
+
+
 .clip {
   height: 300px;
   width: 30%;
@@ -568,37 +626,57 @@ h7 a {
       display: block;
   }
 
-/*  ul {
-      padding: 0;
+  #name {
+    font-size: 30px;
+    float: none;
+    padding-left: 20px;
   }
 
-  ul li {
-  display: block;
-  margin-top: 5px;
-  }*/
+  #hero {
+  height: 400px;
+  }
 
   nav, h1 {
     float: none;
   }
 
   .line {
-  width: 1.2em;
-  height: 3px;
-  background: #c0b283;
-  margin-top: 0.25em;
-}
+    width: 1.2em;
+    height: 3px;
+    background: #c0b283;
+    margin-top: 0.25em;
+  }
 
   nav ul li:first-child{
-  background: transparent;
-  position: absolute;
-  top:1.5em;
-  right:2em;
-  border: 0px;
-}
-
-  #name {
-  float: none;
+    background: transparent;
+    position: absolute;
+    top:1.5em;
+    border: 0px;
+    margin-right: 2em!important;
+    width: 20px!important;
   }
+
+  header nav {
+    float: none;
+    margin-top: auto;
+    height: 0px;
+    transition: 1s height;
+    overflow: hidden;
+    }
+
+
+  header nav ul li {
+    display: block;
+    margin: 5px 10%;
+    width: 70%;
+    text-align: center;
+    font-size: 15px;
+    }
+
+  header nav ul li a {
+    padding: 15px 15px;
+    display: block;
+    }
 
   nav {
     float: none;
@@ -608,7 +686,7 @@ h7 a {
   }
 
   nav.show {
-    height: 15em;
+    height: 20em;
   }
 
   .clip {
@@ -623,7 +701,7 @@ h7 a {
   #welcome {
   color: #f4f4f4;
   font-size: 1.5em;
-  padding: 10px 10px;
+  padding: 100px 10px;
   margin-top: 0px;
   }
 
@@ -638,3 +716,49 @@ h7 a {
 
 
 }
+
+
+
+@media screen and (max-width:850px){ 
+
+#hero {
+  height: 500px;
+}
+
+#welcome {
+  padding: 200px 10px;
+}
+
+}
+
+@media screen and (max-width:500px){ 
+
+#hero {
+  height: 300px;
+}
+
+#welcome {
+  padding: 50px 10px;
+}
+
+}
+
+}
+
+@media only screen and (max-device-width: 1024px) {
+    #hero {
+        background-attachment: scroll;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
