@@ -63,8 +63,11 @@ nav ul li:first-child{
 }
 
 #hero {
-  height: 30%;
-  background-color: #373737;
+  height: auto;
+  background: url("../images/isleofskyebg.jpg");
+  background-size: cover;
+  background-width: 100%;
+ ]
 }
 
 #welcome {
@@ -82,6 +85,11 @@ nav ul li:first-child{
 
 /*BEGIN RESUME CSS*/
 
+.main {
+  width: 80%;
+  margin-left: 10%;
+
+}
 
 h2 {
   font-weight: 900;
