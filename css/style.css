@@ -17,6 +17,9 @@ header{
   overflow:hidden;
   background-color: #f4f4f4;
   position: relative;
+/*  width: 100%;
+  position: fixed;
+  padding-top: none;*/
 }
 
 #container{
@@ -169,24 +172,29 @@ h2 {
   bottom: -30px;
 }
 
-.user-1 {
-  background-image: url(../images/about.jpg);
+.img-1 {
+  background-image: url(../images/resume/checkmark.png);
+  background-size: cover;
 }
 
-.user-2 {
-  background-image: url(../images/experience.jpg);
+.img-2 {
+  background-image: url(../images/resume/laptop.png);
+  background-size: cover;
 }
 
-.user-3 {
-  background-image: url(../images/education.jpg);
+.img-3 {
+  background-image: url(../images/resume/gradcap.png);
+  background-size: cover;
 }
 
-.user-4 {
-  background-image: url(../images/skills.jpg);
+.img-4 {
+  background-image: url(../images/resume/star.png);
+  background-size: cover;
 }
 
-.user-5 {
-  background-image: url(../images/etcetera.jpg);
+.img-5 {
+  background-image: url(../images/resume/threedots.png);
+  background-size: cover;
 }
 
 .event label,
@@ -560,24 +568,39 @@ end resume css*/
 
 /*End Modal CSS*/
 
+#clipDivOne {
+ background-image: url(https://previews.123rf.com/images/arcady31/arcady311108/arcady31110800017/10101139-Sample-stamp-Stock-Photo-rubber.jpg);
+  background-size: cover;
+}
 
+#clipDivTwo {
+ background-image: url(https://previews.123rf.com/images/arcady31/arcady311108/arcady31110800017/10101139-Sample-stamp-Stock-Photo-rubber.jpg);
+  background-size: cover;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+#clipDivThree {
+  background-image: url(https://previews.123rf.com/images/arcady31/arcady311108/arcady31110800017/10101139-Sample-stamp-Stock-Photo-rubber.jpg);
+  background-size: cover;
+}
 
 
 .clip {
   height: 300px;
   width: 30%;
-  border: black 1px solid;
+  border: 0px;
   float: left;
   margin-left: 2.5%;
   margin-right: 2.5%;
   margin-bottom: 2.5%;
-  background-color: #f4f4f4;
+ /* background-color: #f4f4f4;*/
 }
 
-.clip:nth-of-type(2) {
+/*.clip:nth-of-type(2) {
   margin-left: 0px;
   margin-right: 0px;
-}
+}*/
 
 h4 {
   color: #f4f4f4;
