@@ -1,194 +1,195 @@
 <!DOCTYPE html>
 <html>
+<!-- Welcome to my code! This site was birthed as a final project for General Assembly's Front End Web Development course. All of this code was written from scratch by me, aside from a bit of help in the "resume" section. I repurposed and redesigned some advanced CSS from Codrops- be sure to check them out! I wanted to extend a thank you to my friend, Candice Navi, for the logo she made me. Enjoy the site. -->
 <head>
 	<title>Nicole Danielle Portfolio</title>
 <!-- <link rel="stylesheet" href="css/reset.css"> -->
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,600i,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Euphoria+Script" rel="stylesheet">
 </head>
 <body>
+<div id="wrapper">
+	<div id="static">
+		<header>
+			<img id="logo" src="images/nglogo.png">
+			<nav>
+				<ul>
+					<li>
+			           <div class="line"></div>
+			           <div class="line"></div>
+			           <div class="line"></div>
+			        </li>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#resumeSection">RESUME</a></li>
+					<li><a href="#portfolioSection">PORTFOLIO</a></li>
+					<li><a href="#inspirationSection">INSPIRATION</a></li>
+					<li><a id="blog" onclick="alert('Blog will be coming soon!')">BLOG</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
 
-<div id="container">
+	<div id="container">
+		<section id="hero">
+		<!-- The background photograph in this section is of Isle of Skye, Scotland. When I walked this serene trail at The Quairing, early in the misty morning fog, I knew I wanted a change. I decided that as soon as I got back to the U.S. I'd make a point to learn more, grow more and find a passion I could pursue to the fullest. The journey has brought me here, to developing my first website since I was about 13 years old. -->
+			<p id="welcome">
+			<span id="resumeSection"> </span>
+				<span id="name">Nicole Gilbert</span><br> 
+				Front End Design & Development
+			</p>
+		</section>
 
-<header>
-	<img src="images/nglogo.png" width="150px">
-	<nav>
-	<ul>
-		<li>
-           <div class="line"></div>
-           <div class="line"></div>
-           <div class="line"></div>
-        </li>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Resume</a></li>
-		<li><a href="#">Portfolio</a></li>
-		<li><a href="#">Inspiration</a></li>
-		<li><a href="#">Blog</a></li>
-	</ul>
-	</nav>
-</header>
-<section id="hero">
-	<p id="welcome">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt nibh urna, at consequat quam ornare nec.
-	</p>
-</section>
+		<section id="resume">
+					
+					<div class="clearfix">
+					
+						<h2>Resume</h2>
+					
+					</div>
+					
+					<section class="main" id="resumeSection">
 
-<section id="resume">
+						<ul class="timeline">
 
-<!-- <div class="container">	 -->
-
-			<!-- Codrops top bar -->
-			<!-- <div class="codrops-top clearfix">
-				<a href="http://tympanus.net/Tutorials/LoadingAnimations/">
-					<strong>&laquo; Previous Demo: </strong>Css Loading Animations
-				</a>
-				<span class="right">
-					<a href="http://www.patternify.com/">Patterns from Patternify</a>
-					<a href="http://tympanus.net/codrops/?p=12185">
-						<strong>Back to the Codrops Article</strong>
-					</a>
-				</span> -->
-			<!-- </div> --><!--/ Codrops top bar -->
-			
-			<header class="clearfix">
-			
-				<h2>Resume</h2>
-			
-			</header>
-			
-			<section class="main">
-
-				<ul class="timeline">
-
-					<li class="event">
-						<input type="radio" name="tl-group" checked/>
-						<label></label>
-						<div class="thumb img-1"><span>Summary</span></div>
-						<div class="content-perspective">
-							<div class="content">
-								<div class="content-inner">
-									<h3>Lorem ipsum dolor sit amet,</h3>
-									<p>consectetur adipiscing elit. Nam tincidunt nibh urna, at consequat quam ornare nec. Pellentesque sed malesuada massa. Etiam finibus at urna a aliquet. Aliquam at tellus at nisi iaculis vestibulum.</p>
+							<li class="event">
+								<input type="radio" name="tl-group" checked/>
+								<label></label>
+								<div class="thumb img-1"><span>Summary</span></div>
+								<div class="content-perspective">
+									<div class="content">
+										<div class="content-inner">
+											<h3>Front-end developer with an eye for details,</h3>
+											<p>and proven expertise in project management and client relationship management. I thrive in situations where I have the opportunity to research, learn, and solution.</p>
+										</div>
+									</div>
 								</div>
-							</div>
-						</div>
-					</li>
+							</li>
 
-					<li class="event">
-						<input type="radio" name="tl-group"/>
-						<label></label>
-						<div class="thumb img-2"><span>Experience</span></div>
-						<div class="content-perspective">
-							<div class="content">
-								<div class="content-inner">
-									<h3>Lorem ipsum dolor sit amet,</h3>
-									<p>consectetur adipiscing elit. Nam tincidunt nibh urna, at consequat quam ornare nec. Pellentesque sed malesuada massa. Etiam finibus at urna a aliquet. Aliquam at tellus at nisi iaculis vestibulum.</p>
+							<li class="event">
+								<input type="radio" name="tl-group"/>
+								<label></label>
+								<div class="thumb img-2"><span>Experience</span></div>
+								<div class="content-perspective">
+									<div class="content">
+										<div class="content-inner">
+											<h3>Five years of professional digital experience,</h3>
+											<p>including 3 as a client-facing project manager at tech-marketing startup MomentFeed. I began my career in 2012 as an online producer at Arizona's largest newspaper, The Arizona Republic. </p>
+										</div>
+									</div>
 								</div>
-							</div>
-						</div>
-					</li>
+							</li>
 
-					<li class="event">
-						<input type="radio" name="tl-group"/>
-						<label></label>
-						<div class="thumb img-3"><span>Education</span></div>
-						<div class="content-perspective">
-							<div class="content">
-								<div class="content-inner">
-									<h3>Lorem ipsum dolor sit amet,</h3>
-									<p>consectetur adipiscing elit. Nam tincidunt nibh urna, at consequat quam ornare nec. Pellentesque sed malesuada massa. Etiam finibus at urna a aliquet. Aliquam at tellus at nisi iaculis vestibulum.</p>
+							<li class="event">
+								<input type="radio" name="tl-group"/>
+								<label></label>
+								<div class="thumb img-3"><span>Education</span></div>
+								<div class="content-perspective">
+									<div class="content">
+										<div class="content-inner">
+											<h3>I'm always looking to grow and learn.</h3>
+											<p>I hold several degrees and certiciations. Most recently, I completed General Assembly's Front End Web Development program. I also received a Masters in Mass Communication and two bachelor's degrees in Journalism and Sustainability from Arizona State University. I've completed the American Management Association's Project Management Fundamentals certification.</p>
+										</div>
+									</div>
 								</div>
-							</div>
-						</div>
-					</li>
+							</li>
 
-					<li class="event">
-						<input type="radio" name="tl-group"/>
-						<label></label>
-						<div class="thumb img-4"><span>Skills</span></div>
-						<div class="content-perspective">
-							<div class="content">
-								<div class="content-inner">
-									<h3>Lorem ipsum dolor sit amet,</h3>
-									<p>consectetur adipiscing elit. Nam tincidunt nibh urna, at consequat quam ornare nec. Pellentesque sed malesuada massa. Etiam finibus at urna a aliquet. Aliquam at tellus at nisi iaculis vestibulum.</p>
+							<li class="event">
+								<input type="radio" name="tl-group"/>
+								<label></label>
+								<div class="thumb img-4"><span>Skills</span></div>
+								<div class="content-perspective">
+									<div class="content">
+										<div class="content-inner">
+											<h3>I can't remember life without a computer.</h3>
+											<p>I'm great with HTML, CSS (Bootstrap), JavaScript (jQuery), Project Management, Microsoft Office (Excel), Salesforce, Jira, GitHub, Sublime, Photoshop, Social Media, Google Analytics, SEO, Web Hosting - and I am a quick and avid learner of new skills.</p>
+										</div>
+										<span id="portfolioSection"> </span>
+									</div>
 								</div>
-							</div>
-						</div>
-					</li>
+							</li>
 
-					<li class="event">
-						<input type="radio" name="tl-group"/>
-						<label></label>
-						<div class="thumb img-5"><span>Ecetera</span></div>
-						<div class="content-perspective">
-							<div class="content">
-								<div class="content-inner">
-									<h3>Lorem ipsum dolor sit amet,</h3>
-									<p>consectetur adipiscing elit. Nam tincidunt nibh urna, at consequat quam ornare nec. Pellentesque sed malesuada massa. Etiam finibus at urna a aliquet. Aliquam at tellus at nisi iaculis vestibulum.</p>
+<!-- 							<li class="event">
+								<input type="radio" name="tl-group"/>
+								<label></label>
+								<div class="thumb img-5"><span>Ecetera</span></div>
+								<div class="content-perspective">
+									<div class="content">
+										<div class="content-inner">
+											<h3>Lorem ipsum dolor sit amet,</h3>
+											<p>consectetur adipiscing elit. Nam tincidunt nibh urna, at consequat quam ornare nec. Pellentesque sed malesuada massa. Etiam finibus at urna a aliquet. Aliquam at tellus at nisi iaculis vestibulum.</p>
+										</div>
+									</div>
 								</div>
-							</div>
-						</div>
-					</li>
-					</ul>
-			</section>
+							</li> -->
+							</ul>
+					</section>
+		</section>
+
+		<section id="portfolio">
+			<h4>Portfolio</h4>
+			<a id="linkOne" href="#"><div class="clip" id="clipDivOne">
+			</div></a>
+			<a id="linkTwo" href="#"><div class="clip" id="clipDivTwo">
+			</div></a>
+			<a id="linkThree" href="#"><div class="clip" id="clipDivThree">
+			</div></a>
+			<span id="inspirationSection"> </span>
+		</section>
+
+		<!-- Modal Pop Ups -->
+
+		<div id="clipOne" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+		    <p>During my time in college, I studied digital journalism, and had the opportunity to work for a summer investigating food safety in the U.S. As a part of my piece for News21, I decided to test out my programming chops and create an interactive quiz using JavaScript. Click the image below to take the quiz! (best viewed on a desktop computer)</p>
+			<a href="http://assets.news21.com/2011/seafood-shuffle/horozpanels.html" target="_blank"><img class="modalImage" src="images/clips/seafood-shuffle.png"></a>
+		  </div>
+		</div>
+
+		<div id="clipTwo" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+		    <p>As a lab assignment in General Assembly's Front End Web Development class, we were tasked with making a simple Rock, Paper, Scissors game function. Check out the game by clicking on the image!</p>
+		    <a href="Rock-Paper-Scissors/index.html" target="_blank"><img class="modalImage" src="images/clips/rockpaperscissors.png"></a>
+		  </div>
+		 </div>
+
+		<div id="clipThree" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+		    <p>This digital resume is a result of my final project for General Assembly's Front End Web Development class. I knew I wanted to add in some interactive elements to showcase my resume. The major achievement is integrating all of the new skills I learned, especially JavaScript elements (modals & mobile views).</p>
+		  </div>
 
 		</div>
 
-</section>
+		<aside>
+			<p id="inspiration">
+				I have had my greatest bursts of inspiration when I've trekked out into nature. I also am lucky to be surrounded by creative and innovative human beings in my everyday life who drive me to do what feels good. Please take a look at the work of some of those that I admire most:
+				<br>
+				<span id="friends">
+					<a href="http://kylegilbertphoto.com/" target="_blank">KYLE GILBERT PHOTO</a> | <a href="http://www.palmsdaydreams.com/" target="_blank">PALMS DAYDREAMS HOME</a> | <a href="http://www.laineyoriginal.com/" target="_blank">LAINEY ORIGINAL JEWELRY</a> | <a href="http://almeidarb.github.io/" target="_blank">RACHEL ALMEIDA DEVELOPER</a> | <a href="http://www.candicenavi.com/" target="_blank">CANDICE NAVI DESIGN</a>
+				</span>
+			</p>
+		</aside>
 
-<section id="portfolio">
-	<h4>Portfolio</h4>
-	<a id="linkOne" href="#"><div class="clip" id="clipDivOne">
-	</div></a>
-	<a id="linkTwo" href="#"><div class="clip" id="clipDivTwo">
-	</div></a>
-	<a id="linkThree" href="#"><div class="clip" id="clipDivThree">
-	</div></a>
-</section>
+		<footer>
+			<h7>
+				 Nicole Gilbert © 2017   |   <a href="mailto:nicolegilbert16@gmail.com">Contact Me</a>  
+			</h7>
+				<br>
+				<a href="https://www.linkedin.com/in/nicoledgilbert/" target="_blank">
+				 <img id="linkedin" src="images/linkedin.png"></a>
+			
+		</footer>
 
-<!-- Modal Pop Ups -->
-
-<div id="clipOne" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Clip Numero Uno</p>
-  </div>
-</div>
-
-<div id="clipTwo" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Clip Numero Dos</p>
-  </div>
- </div>
-
-<div id="clipThree" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Clip Numero Tres</p>
-  </div>
-
-</div>
-
-<aside>
-		<p id="inspiration">
-		Inspo:<br>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt nibh urna, at consequat quam ornare nec. Pellentesque sed malesuada massa. Etiam finibus at urna a aliquet. Aliquam at tellus at nisi iaculis vestibulum.
-	</p>
-</aside>
-
-<footer>
-	<h7>
-		Copyright Nicole Gilbert 2017   |   <a href="#">Contact Me</a>
-	</h7>
-</footer>
-
+	</div>
 </div>
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>

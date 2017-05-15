@@ -1,0 +1,52 @@
+body {
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+  background: #4ABDAC;
+  color: #DFDCE3;
+  margin: 3em;
+}
+
+strong {
+  text-decoration: underline;
+}
+
+button {
+  background: #DFDCE3;
+  color: #4ABDAC;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  font-family: monospace;
+  font-weight: bold;
+}
+button:active {
+  background: #FC4A1A;
+}
+
+.scoreboard {
+  width: 14em;
+  margin: auto;
+  border: 1px solid #DFDCE3;
+}
+.scoreboard h2 {
+  border-bottom: 1px solid #DFDCE3;
+  margin: 0;
+  padding: 10px;
+}
+.scoreboard table {
+  margin: 10px auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+.scoreboard th, .scoreboard td {
+  text-align: center;
+}
+.scoreboard td {
+  font-size: 3em;
+  padding: 0 20px;
+}
+
+#status {
+  margin-top: 20px;
+}
