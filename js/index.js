@@ -18,26 +18,26 @@ $(".close").click(closeModal);
 // Functions
 
 
-function openOne(e){
-	e.preventDefault();
+function openOne(event){
+	event.preventDefault();
 	$("#clipOne").show();
 }
 
 
-function openTwo(e){
-	e.preventDefault();
+function openTwo(event){
+	event.preventDefault();
 	$("#clipTwo").show();
 }
 
 
-function openThree (e){
-	e.preventDefault();
+function openThree (event){
+	event.preventDefault();
 	$("#clipThree").show();
 }
 
 
-function closeModal (e){
-	e.preventDefault();
+function closeModal (event){
+	event.preventDefault();
 	$(this).parent().parent().hide();
 }
 
