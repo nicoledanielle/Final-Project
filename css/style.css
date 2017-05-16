@@ -67,6 +67,15 @@ ul li a{
   text-decoration: none;
 }
 
+header ul li:hover {
+  background-color: #f4f4f4;
+  border: solid 1px #463768;
+}
+
+ul li a:hover{  
+  color: #463768;
+}
+
 nav ul li:first-child:hover{
   cursor: pointer;
 }
@@ -794,7 +803,7 @@ h7 a {
     margin-bottom: 2.5%;
   }
 
-  .clip:nth-of-type(2) {
+  #clipDivTwo {
   margin-left: 2.5%;
   margin-right: none;
   }
@@ -822,6 +831,17 @@ h7 a {
     font-size: 10px;
 }
 
+#clipDivOne:hover {
+ background-image: url(../images/clips/seafood-hover-mobile.png);
+}
+
+#clipDivTwo:hover {
+ background-image: url(../images/clips/rockpaperscissors-hover-mobile.png);
+}
+
+#clipDivThree:hover {
+ background-image: url(../images/clips/portfolio-hover-mobile.png);
+}
 
 }
 
